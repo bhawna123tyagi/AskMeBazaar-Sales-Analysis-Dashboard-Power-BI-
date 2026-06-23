@@ -1,0 +1,112 @@
+1. Data Collection
+
+Imported sales data from Excel into Power BI.
+
+Verified data structure and relationships.
+
+
+2. Data Cleaning & Transformation
+
+Performed data cleaning using Power Query:
+
+Checked and handled missing values.
+
+Removed duplicate records.
+
+Corrected data types.
+
+Renamed columns for better readability.
+
+Validated data consistency.
+
+
+3. Data Modeling
+
+Created a Star Schema:
+
+Fact_Sales
+
+Dim_Customer
+
+Dim_Product
+
+Dim_Payment
+
+Dim_Date
+
+
+Established relationships between dimension and fact tables.
+
+4. DAX Measures Created
+
+Total Revenue = SUM(Fact_Sales[Revenue])
+
+Total Orders = DISTINCTCOUNT(Fact_Sales[Order ID])
+
+Total Discount = SUM(Fact_Sales[Discount Amount])
+
+Total Quantity = SUM(Fact_Sales[Quantity])
+
+Total GMV = SUM(Fact_Sales[GMV])
+
+Average Order Value =
+DIVIDE([Total Revenue],[Total Orders],0)
+
+5. Dashboard Development
+
+Page 1 – Executive Sales Overview
+
+Created:
+
+KPI Cards
+
+Total GMV
+
+Total Orders
+
+Total Discount
+
+Total Revenue
+
+Total Quantity
+
+
+Revenue Trend Analysis
+
+Product-wise Revenue Analysis
+
+Payment Mode Analysis
+
+Geographic Sales Distribution
+
+Year and Payment Mode Filters
+
+
+Page 2 – Product Performance Analysis
+
+Created:
+
+Revenue by Category
+
+Revenue by Sub-Category
+
+Product Quantity Analysis
+
+Product-Level Performance Table
+
+Top Selling Product Analysis
+
+
+Page 3 – Geographic Analysis
+
+Created:
+
+Revenue by State
+
+Revenue by City
+
+Order Analysis by Location
+
+Average Order Value by City
+
+Interactive Geographic Map
